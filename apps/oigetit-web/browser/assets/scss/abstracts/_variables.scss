@@ -1,0 +1,83 @@
+//== Bootstrap overrides
+
+$primary:       #0fa7e6;
+$success:       #53bb4a;
+$warning:       #f59d0b;
+$danger:        #eb0000;
+$white:         #fff;
+$black:         #000;
+
+$body-color:    $black;
+
+$font-family-base:              "AvenirNextLTPro", sans-serif;
+$font-size-root:                20px;
+$font-size-base:                0.8rem;
+$font-weight-medium:            500;
+$font-weight-demi:              600;
+
+$btn-font-weight:               $font-weight-medium;
+$btn-focus-width:               0;
+$btn-focus-box-shadow:          none;
+
+$dropdown-min-width:            8rem;
+$dropdown-link-hover-bg:        #f4f6fa;
+$dropdown-border-radius:        0.2rem;
+$dropdown-border-color:         #d5dce0;
+$dropdown-box-shadow:           0 0.15rem 0.75rem 0.05rem rgba(0, 0, 0, 0.08);
+
+$modal-content-border-radius:   0.2rem;
+$modal-md:                      30rem;
+
+$border-radius:                 0.15rem;
+
+$input-color:                   #282828;
+$input-bg:                      #f4f6fa;
+$input-group-addon-bg:          #f4f6fa;
+$input-border-width:            0;
+$input-border-radius:           0.1rem;
+$input-focus-box-shadow:        none;
+
+$custom-checkbox-indicator-border-radius:           0.1rem;
+$custom-control-indicator-bg:                       $white;
+$custom-control-indicator-border-color:             #e1e1e1;
+$custom-control-indicator-border-width:             1px;
+$custom-control-indicator-checked-color:            $primary;
+$custom-control-indicator-checked-bg:               $white;
+$custom-control-indicator-checked-border-color:     #e1e1e1;
+
+$close-color:                   $black;
+$close-text-shadow:             none;
+$close-font-size:               1rem;
+
+$popover-max-width:             550px;
+
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 480px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1388px
+);
+
+//== End Bootstrap overrides
+
+$sidebar-width:                 255px;
+$sidebar-width-lg-screens:      215px;
+$header-height:                 3.5rem;
+$content-padding-vertical:      1.5rem;
+$layout-max-width:              1388px;
+
+$color-header-bg-start:         #0087be;
+$color-header-bg-end:           #45b6e5;
+$color-title:                   #282828;
+$color-separator:               #ebebeb;
+$color-button-share:            #97a2a8;
+$color-button-share-hover:      $primary;
+$color-button-share-active:     $primary;
+$color-text-primary:            $black;
+$color-text-secondary:          #7b8388;
+
+$animation-duration:            0.3s;
+$animation-timing-function:     ease-in;

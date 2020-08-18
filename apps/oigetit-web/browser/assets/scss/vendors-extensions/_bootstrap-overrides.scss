@@ -1,0 +1,32 @@
+.container-fluid {
+    &--main-content {
+        max-width: map-get($container-max-widths, xl);
+    }
+}
+
+.close {
+    @include transition();
+    opacity: 1;
+
+    &:not(:disabled):not(.disabled):hover, &:not(:disabled):not(.disabled):focus {
+        opacity: 1;
+    }
+
+    span {
+        @include transition();
+        display: block;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+        color: rgba($black, 0.5);
+        background-color: rgba($white, 0.3);
+    }
+
+    &:hover, &:focus, &:active {
+        span{
+            color: rgba($black, 0.6);
+            background-color: rgba($white, 0.45);
+        }
+    }
+}

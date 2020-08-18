@@ -1,0 +1,59 @@
+@mixin truncate-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin transition($prop: all, $duration: $animation-duration, $timing-function: $animation-timing-function, $delay: 0s) {
+  transition-property: $prop;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  transition-delay: $delay;
+}
+
+@mixin high-dpi {
+  @media
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (           min-resolution: 192dpi),
+  only screen and (            min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin triangle($direction: toBottom, $triangle-offset: $tooltip-triangle-offset, $triangle-width: $tooltip-triangle-width, $triangle-spread: $tooltip-triangle-spread) {
+  @if $direction == toBottom {
+    top: 100%;
+    right: $triangle-offset;
+    border-width: $triangle-spread $triangle-width/2 0 $triangle-width/2;
+    border-color: $tooltip-bg-color transparent transparent transparent;
+  }
+  @else if $direction == toTop {
+    bottom: 100%;
+    left: $triangle-offset;
+    border-width: 0 $triangle-width/2 $triangle-spread $triangle-width/2;
+    border-color: transparent transparent $tooltip-bg-color transparent;
+  }
+  @else if $direction == toLeft {
+    right: 100%;
+    bottom: $triangle-offset;
+    border-width: $triangle-width/2 $triangle-spread $triangle-width/2 0;
+    border-color: transparent transparent $tooltip-bg-color transparent;
+  }
+  @else if $direction == toRight {
+    left: 100%;
+    top: $triangle-offset;
+    border-width: $triangle-width/2 0 $triangle-width/2 $triangle-spread;
+    border-color: transparent transparent $tooltip-bg-color transparent;
+  }
+}

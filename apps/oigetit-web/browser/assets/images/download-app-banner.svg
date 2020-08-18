@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <radialGradient id="a" cx="43.2%" cy="43.623%" r="143.302%" fx="43.2%" fy="43.623%" gradientTransform="matrix(0 -1 1.05032 0 -.026 .868)">
+            <stop offset="0%" stop-color="#0FA7E6"/>
+            <stop offset="100%" stop-color="#176382"/>
+            <stop offset="100%"/>
+            <stop offset="100%"/>
+        </radialGradient>
+        <linearGradient id="b" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#F00"/>
+            <stop offset="100%" stop-color="#00BAFF"/>
+        </linearGradient>
+        <path id="c" d="M20.233 8.278c6.603 0 11.956 5.353 11.956 11.955 0 6.603-5.353 11.956-11.956 11.956-6.602 0-11.955-5.353-11.955-11.956 0-6.602 5.353-11.955 11.955-11.955zm-.19 2.657a9.109 9.109 0 1 0 0 18.218 9.109 9.109 0 0 0 0-18.218z"/>
+        <filter id="d" width="108.4%" height="108.4%" x="-4.2%" y="-4.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.130717844 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="40" height="40" fill="url(#a)" rx="10"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M20.012 5.104c8.234 0 14.908 6.675 14.908 14.908 0 8.234-6.674 14.908-14.908 14.908-8.233 0-14.908-6.674-14.908-14.908 0-8.233 6.675-14.908 14.908-14.908zm0 5.734a9.174 9.174 0 1 0 0 18.348 9.174 9.174 0 0 0 0-18.348z"/>
+        <g fill-rule="nonzero" opacity=".905">
+            <use fill="url(#b)" xlink:href="#c"/>
+            <use fill="#000" filter="url(#d)" xlink:href="#c"/>
+        </g>
+    </g>
+</svg>

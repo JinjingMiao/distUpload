@@ -1,0 +1,66 @@
+.page-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 4rem;
+    z-index: 101;
+    background-color: #ffffff;
+    position: fixed;
+    top: $header-height;
+    left: 0.5rem;
+    right: 0.5rem;
+    padding: 1rem 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+        height: 4.5rem;
+        left: 1rem;
+        right: 1rem;
+        padding: 1.5rem 0.5rem 0.75rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        left: 13.75rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        left: 13.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        left: 14rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        left: auto;
+        right: auto;
+        width: 1088px;
+        margin-left: -0.5rem;
+    }
+
+    &--misc-page {
+        align-items: center;
+    }
+}
+
+.page-heading__title {
+    margin-right: auto;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: $color-title;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.page-heading__controls {
+    margin-top: auto;
+    line-height: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+        line-height: 2rem;
+    }
+}

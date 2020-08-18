@@ -1,0 +1,27 @@
+*:focus, button:focus {
+    outline: none;
+}
+
+*::-moz-focus-inner {
+    border: 0;
+}
+
+html {
+    font-size: $font-size-root;
+}
+
+body {
+    min-width: 375px;
+    font-family: $font-family-base;
+    line-height: 1.25;
+    color: $black;
+}
+
+p {
+    font-size: $font-size-base;
+    line-height: 1.5;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

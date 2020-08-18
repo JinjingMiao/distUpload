@@ -1,0 +1,37 @@
+.category-modal-content {
+    padding: 30px 20px;
+
+    @include media-breakpoint-up(sm) {
+        padding: 50px;
+    }
+}
+
+.modal-content .close {
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-body--info {
+    @include media-breakpoint-up(sm) {
+        padding: 40px 60px 50px;
+    }
+}
+
+.modal-body--no-padding {
+    padding: 0;
+}
+
+.modal__title {
+    font-size: 30px;
+    font-weight: 500;
+    color: $color-title;
+    margin-bottom: 20px;
+}
+
+.modal__subtitle {
+    font-size: 18px;
+    line-height: 1.33;
+    color: $color-text-secondary;
+}

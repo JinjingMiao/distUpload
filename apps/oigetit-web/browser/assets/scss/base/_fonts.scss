@@ -1,0 +1,31 @@
+//== AvenirNextLTPro
+@font-face {
+    font-family: "AvenirNextLTPro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("AvenirNextLTPro Regular"),
+         local("AvenirNextLTPro-Regular"),
+         url("/assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
+         url("/assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "AvenirNextLTPro";
+    font-style: normal;
+    font-weight: 500;
+    src: local("AvenirNextLTPro Medium"),
+    local("AvenirNextLTPro-Medium"),
+    url("/assets/fonts/AvenirNextLTPro-Medium.woff2") format("woff2"),
+    url("/assets/fonts/AvenirNextLTPro-Medium.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "AvenirNextLTPro";
+    font-style: normal;
+    font-weight: 600;
+    src: local("AvenirNextLTPro Demi"),
+         local("AvenirNextLTPro-Demi"),
+         url("/assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"),
+         url("/assets/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+    font-display: swap;
+}
